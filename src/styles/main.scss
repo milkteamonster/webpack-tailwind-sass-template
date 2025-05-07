@@ -1,0 +1,59 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'variables';
+
+/* Global styles can be added below */
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #b16666;
+}
+
+.container {
+	width: 100vw;
+	//width: 600px;
+	height: 600px;
+	// margin: auto;
+	display: flex;
+	//flex-wrap: wrap;
+	gap: 10px;
+	// border: 1px solid #ddd;
+
+	&-inner {
+		border-radius: $border-radius;
+		background-color: #6a8bd3;
+		box-sizing: border-box;
+		padding: 5px;
+		border: 2px solid #ddd;
+		color: $secondary-color;
+		height: auto;
+		align-items: center;
+	}
+
+	.first {
+		width: 300px;
+		flex-shrink: 0;
+	}
+	.second {
+		width: calc(100% - #{$sidebar-width * 2} - #{$gap-size * 2});
+		min-width: 100px;
+		background-color: $bgg-color;
+	}
+	.third {
+		width: 300px;
+		flex-shrink: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-wrap: wrap;
+	}
+	.first,
+	.second,
+	.third {
+		width: 100%;
+	}
+}
