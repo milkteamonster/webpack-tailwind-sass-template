@@ -2,13 +2,33 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'variables';
+@import "tailwindcss";
+
+// @layer base {
+//   html {
+//     height: 100%;
+//     -webkit-font-smoothing: antialiased;
+//   }
+//   body {
+//     display: flex;
+//     height: 100%;
+//     background-color: var(--color-zinc-50);
+//   }
+// }
+
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
 
 /* Global styles can be added below */
 body {
 	font-family: 'Inter', sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #b16666;
+	display: flex;
+    height: 100%;
+    background-color: var(--color-zinc-50);
 }
 
 .container {
@@ -27,7 +47,7 @@ body {
 		box-sizing: border-box;
 		padding: 5px;
 		border: 2px solid #ddd;
-		color: $secondary-color;
+		// color: $secondary-color;
 		height: auto;
 		align-items: center;
 	}
