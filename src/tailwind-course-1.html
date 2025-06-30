@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Build UIs that don't suck</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
-	</head>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
 	<body>
 		<div class="flex w-full">
       <div class="fixed inset-0 flex justify-center sm:px-8">
@@ -66,12 +66,12 @@
                           <div class="relative isolate flex flex-col items-start rounded-2xl hover:bg-pink-100 px-4 py-6 md:col-span-3">
                             <h2 class="text-base font-semibold tracking-tight text-zinc-800">
                               <a href="#">
-                                <span class="absolute inset-0 bg-pink-400/25 z-10"></span> <!-- z-10 讓他永遠最上層 -->
+                                <span class="absolute inset-0 z-10"></span> <!-- z-10 讓他永遠最上層 -->
                                 Crafting a design system for a multiplanetary future
                               </a>
                             </h2>
                             <time class="relative order-first mb-3 flex items-center pl-3.5 text-sm text-zinc-400 md:hidden" datetime="2022-09-05">
-                              <span class="absolute inset-y-0 left-0 flex items-center bg-black" aria-hidden="true"><span class="h-4 w-0.5 rounded-full bg-zinc-200"></span></span>
+                              <span class="absolute inset-y-0 left-0 flex items-center" aria-hidden="true"><span class="h-4 w-0.5 rounded-full bg-zinc-200"></span></span>
                               September 5, 2022
                             </time>
                             <p class="mt-2 text-sm text-zinc-600">
